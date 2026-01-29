@@ -9,10 +9,14 @@
     default-src 'self';
     script-src
       'self'
-      'sha256-UNsdoY9bAsQWc2eF9X1I+eV7IubOPQVj9v2AijiWTk8='
-      'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data: https://media.api-sports.io;
+      'sha256-SSkD6SUXLQqYhdIffFFJ1q7Nrd1N8j5t8bJe+gBEtW0=';
+    style-src
+      'self'
+      'unsafe-inline';
+    img-src
+      'self'
+      data:
+      https://media.api-sports.io;
     connect-src
       'self'
       https://v3.football.api-sports.io;
@@ -21,8 +25,6 @@
     frame-src 'none';
     base-uri 'self';
   ">
-
-
   <title>Tabla de Posiciones Premier League</title>
   <style>
     @font-face {
@@ -228,7 +230,7 @@
 <body>
 
   <div class="container">
-    <h2 class="titulo">Tabla de Posiciones Premier League</h2>
+    <h2 class="titulo">Tabla de Posiciones Liga Española</h2>
     <table id="standingsTable">
       <thead>
         <tr>
@@ -251,7 +253,7 @@
 
   <script>
     const API_KEY = '6ac8ce1ea0e65a6443b8aa8f6d604571';
-    const LEAGUE_ID = 39;
+    const LEAGUE_ID = 140;
     const SEASON = 2023;
 
     async function cargarTabla() {
